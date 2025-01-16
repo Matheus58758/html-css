@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+font-family: 'Times New Roman', Times, serif;
+background-color:#00E0BF ;
+}
+main{
+    background-color:#304961 ;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 7px 7px 13p darkblue;
+    margin: 10px;
+    border-radius: 10px;
+}

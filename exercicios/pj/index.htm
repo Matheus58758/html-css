@@ -1,0 +1,132 @@
+<script> 
+n = 3032
+let c0 = 0, c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0;
+let tentativas = n;
+
+// Contar a ocorrência de cada dígito
+while (tentativas > 0) {
+  let digito = tentativas % 10;
+
+  if (digito == 0) {
+    c0++;
+  } else {
+    if (digito == 1) {
+      c1++;
+    } else {
+      if (digito == 2) {
+        c2++;
+      } else {
+        if (digito == 3) {
+          c3++;
+        } else {
+          if (digito == 4) {
+            c4++;
+          } else {
+            if (digito == 5) {
+              c5++;
+            } else {
+              if (digito == 6) {
+                c6++;
+              } else {
+                if (digito == 7) {
+                  c7++;
+                } else {
+                  if (digito == 8) {
+                    c8++;
+                  } else {
+                    if (digito == 9) {
+                      c9++;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  tentativas = Math.floor(tentativas / 10);
+}
+
+// Verificar o(s) dígito(s) mais frequente(s)
+let numero_maximo = c0;
+let digitos_maximos = "0";
+
+// Comparar com a maior ocorrência e construir a string
+if (c1 > numero_maximo) {
+  numero_maximo = c1;
+  digitos_maximos = "1";
+} else {
+  if (c1 == numero_maximo) {
+    digitos_maximos += " 1";
+  }
+}
+if (c2 > numero_maximo) {
+  numero_maximo = c2;
+  digitos_maximos = "2";
+} else {
+  if (c2 == numero_maximo) {
+    digitos_maximos += " 2";
+  }
+}
+if (c3 > numero_maximo) {
+  numero_maximo = c3;
+  digitos_maximos = "3";
+} else {
+  if (c3 == numero_maximo) {
+    digitos_maximos += " 3";
+  }
+}
+if (c4 > numero_maximo) {
+  numero_maximo = c4;
+  digitos_maximos = "4";
+} else {
+  if (c4 == numero_maximo) {
+    digitos_maximos += " 4";
+  }
+}
+if (c5 > numero_maximo) {
+  numero_maximo = c5;
+  digitos_maximos = "5";
+} else {
+  if (c5 == numero_maximo) {
+    digitos_maximos += " 5";
+  }
+}
+if (c6 > numero_maximo) {
+  numero_maximo = c6;
+  digitos_maximos = "6";
+} else {
+  if (c6 == numero_maximo) {
+    digitos_maximos += " 6";
+  }
+}
+if (c7 > numero_maximo) {
+  numero_maximo = c7;
+  digitos_maximos = "7";
+} else {
+  if (c7 == numero_maximo) {
+    digitos_maximos += " 7";
+  }
+}
+if (c8 > numero_maximo) {
+  numero_maximo = c8;
+  digitos_maximos = "8";
+} else {
+  if (c8 == numero_maximo) {
+    digitos_maximos += " 8";
+  }
+}
+if (c9 > numero_maximo) {
+  numero_maximo = c9;
+  digitos_maximos = "9";
+} else {
+  if (c9 == numero_maximo) {
+    digitos_maximos += " 9";
+  }
+}
+
+alert("(" + digitos_maximos + ")");
+</script>
