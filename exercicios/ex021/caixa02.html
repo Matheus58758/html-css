@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+         padding: 10px;
+            background-color: white;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(180, 26, 26);
+            padding: 3px; 
+            
+        }
+        nav > a{
+            text-decoration: none;
+            color: rgb(39, 28, 161);
+            font-weight:bold ;
+            margin-right: 30px;
+        }
+        nav >a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius:20px ;
+        }
+        article{
+            background-color: lightblue;
+            padding: 5px;
+        }
+        article >aside{
+            background-color: gainsboro;
+        }
+        footer{
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding:1px ;
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+    </header>
+<main>
+    <section id="assuntos">
+        <p>Esportes politica e tecnologica</p>
+    </section>                
+    <section id="noticias">
+        <article>
+            <h2>Noticias sobre o Brasil</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam in, distinctio recusandae laborum minima repellendus pariatur odio id adipisci ullam sed eligendi voluptatum voluptas quaerat repellat culpa repudiandae! Suscipit, cum.
+            </p>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Desenvolvido por Matheus</p>
+</footer>
+<div id="bola"></div>
+</body>
+</html>
